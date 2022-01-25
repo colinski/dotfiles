@@ -12,7 +12,8 @@ alias rm='rm -r'
 alias which='which -a'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH=/usr/local/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH #macOS only?
+export PATH=$PATH:$HOME/.local/bin #local python goes here a lot
 export EDITOR=vim
 export TERM=xterm-256color
 #LS_COLORS=$LS_COLORS:'ow=0;94:' ; export LS_COLORS
