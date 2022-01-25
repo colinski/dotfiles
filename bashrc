@@ -10,6 +10,7 @@ alias less='less -R'
 alias ls='ls -lLhFG --color'
 alias rm='rm -r'
 alias which='which -a'
+alias top='bpytop'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH #macOS only?
