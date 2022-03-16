@@ -1,8 +1,8 @@
 cp bashrc $HOME/.bashrc
 cp bash_profile $HOME/.bash_profile
-source $HOME/.bash_profile
+#source $HOME/.bash_profile 
+#vim 
 
-#vim
 cp vimrc $HOME/.vimrc
 cp -r vim $HOME/.vim
 
@@ -20,5 +20,5 @@ git clone https://github.com/tpope/vim-pathogen.git $BUNDLE/vim-pathogen
 
 #install fzf
 $HOME/.vim/bundle/fzf/install --no-zsh --key-bindings --completion --no-update-rc
-echo "source \$HOME/.fzf.bash" >> $HOME/.bashrc
-source $HOME/.bashrc
+#echo "source \$HOME/.fzf.bash" >> $HOME/.bashrc
+#source $HOME/.bashrc

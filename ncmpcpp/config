@@ -1,0 +1,9 @@
+mpd_host = "127.0.0.1"
+#mpd_music_dir = "/media/csamplawski/eight/music"
+mpd_music_dir = "/home/csamplawski/music"
+mpd_port = "9600"
+mpd_crossfade_time = "5"
+ncmpcpp_directory = "~/.ncmpcpp"
+
+playlist_display_mode = "columns"
+#progressbar_look = ""
