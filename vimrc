@@ -46,3 +46,9 @@ command Bd bp\|bd \#
 
 inoremap !pdb import ipdb; ipdb.set_trace() # noqa
 let g:netrw_liststyle = 3 "tree mode for file explorer
+set clipboard=unnamedplus
+
+set hlsearch
+
+"kitty thing?
+let &t_ut=''
