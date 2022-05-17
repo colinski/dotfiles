@@ -42,6 +42,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Ctrl+Return exec kitty tmux new bash
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -186,5 +187,8 @@ for_window [class=".*"] border pixel 0
 #for_window [instance="mpv"] focus parent, split horizontal
 #gaps inner all set 20
 gaps inner 15
+
+exec --no-startup-id xrandr --output HDMI-0 --scale 2x2 --output DP-0 --mode 2560x1440 --scale 1.5x1.5 --pos 3840x0
 exec --no-startup-id feh --bg-scale /home/csamplawski/images/bg.jpg
 exec --no-startup-id compton
+#exec --no-startup-up redshift
