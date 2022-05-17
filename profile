@@ -27,6 +27,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 setxkbmap -option caps:escape
+
 #export GDK_SCALE=3
 #export GDK_DPI_SCALE=0.3333333333
 export GDK_SCALE=2
