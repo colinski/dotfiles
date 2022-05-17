@@ -14,16 +14,30 @@ alias rm='rm -r'
 alias which='which -a'
 alias top='bpytop'
 alias icat='kitty +kitten icat'
+alias mpv='mpv'
+
+
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH #macOS only?
 #export PATH=$PATH:$HOME/.local/bin #local python goes here a lot
 export PATH=$PATH:$HOME/.local/bin
+export PYTHONPATH=$PYTHONPATH:$HOME/src/mmclassification
+export PYTHONPATH=$PYTHONPATH:$HOME/src/mmdetection
+export PYTHONPATH=$PYTHONPATH:$HOME/src/mmtracking
+export PYTHONPATH=$PYTHONPATH:$HOME/src/cad
 export EDITOR=vim
 export TERM=xterm-256color
+export SCRATCH=$HOME
+export WORK=$HOME
+
+export MMCLS=$WORK/src/mmclassification
+export MMDET=$WORK/src/mmdetection
+export MMTRACK=$WORK/src/mmtracking
 #LS_COLORS=$LS_COLORS:'ow=0;94:' ; export LS_COLORS
 #LS_COLORS=$LS_COLORS:'di=0;94:' ; export LS_COLORS
 
+alias spython='singularity run --nv -H $WORK $WORK/sif/python.sif ipython'
 #/usr/bin/ls -gohF --color=always
 source $HOME/.fzf.bash
 
